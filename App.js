@@ -26,6 +26,7 @@ export default function App() {
             } else if (route.name === "Contact") {
               //iconName = "ios-contacts";
               iconName = Platform.OS === "ios" ? "ios-people" : "md-people";
+              //allow icons to be plateform specific
             }
 
             // You can return any component that you like here!
