@@ -53,7 +53,7 @@ function HomeHomeScreen() {
           />
         </CardItem>
       </Card>
-      <Accordion style={styles.accordion} dataArray={dataArray} expanded={0} />;
+      <Accordion style={styles.accordion} dataArray={dataArray} expanded={0} />
     </View>
   );
 }
