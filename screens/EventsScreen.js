@@ -6,8 +6,10 @@ function EventsHomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text>Welcome to my event!</Text>
+      <Text>2021 Australian Open Tennis</Text>
+      <Text>Melbourne, Australia: January 18-31, 2021</Text>
       <Button
-        title="Second screen"
+        title="Next Event- French Open"
         onPress={() => navigation.navigate("EventsSecond")}
       ></Button>
     </View>
@@ -17,9 +19,10 @@ function EventsHomeScreen({ navigation }) {
 function EventsSecondScreen({ navigation }) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Events second screen!</Text>
+      <Text>2021 French Open Tennis</Text>
+      <Text>Roland Garros, France May 17 -June 6, 2021</Text>
       <Button
-        title="Third screen"
+        title="Next Event- Wimbledon Championship"
         onPress={() => navigation.navigate("EventsThird")}
       ></Button>
     </View>
@@ -29,19 +32,25 @@ function EventsSecondScreen({ navigation }) {
 function EventsThirdScreen({ navigation }) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Events Third screen!</Text>
+      <Text>2021 Wimbledon Championship</Text>
+      <Text>London, United Kingdom 28 June – 11 July, 2021</Text>
       <Button
-        title="Fourth screen"
+        title="Next Event- US Open"
         onPress={() => navigation.navigate("EventsFourth")}
       ></Button>
     </View>
   );
 }
 
-function EventsFourthScreen() {
+function EventsFourthScreen({ navigation }) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Events second screen!</Text>
+      <Text>2021 US Open</Text>
+      <Text>New York; August 30 - September 12, 2021</Text>
+      <Button
+        title="Next Event- Australia Open"
+        onPress={() => navigation.navigate("EventsHome")}
+      ></Button>
     </View>
   );
 }
