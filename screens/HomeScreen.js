@@ -15,24 +15,27 @@ import {
 
 const dataArray = [
   {
-    title: "What is this?",
-    content: "Exactly what the title says. A basket throwing competition!",
-  },
-  {
-    title: "Who is this by?",
+    title: "What is ATP?",
     content:
-      "The International Society of Basket Throwers (ISBT). We love throwing baskets.",
+      "The Association of Tennis Professionals (ATP) is the governing body of the men's professional tennis circuits - the ATP Tour, the ATP Challenger Tour and the ATP Champions Tour.",
   },
   {
-    title: "Why is this?",
-    content: "Because baskets! Wheee!",
+    title: "Why was it formed?",
+    content:
+      "It was formed to protect the interests of professional tennis players.",
+  },
+  {
+    title: "Who formed it?",
+    content: "It was formed in September 1972 by Donald Dell, Jack Kramer.",
   },
 ];
 
 function HomeHomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.titleText}>Basket Throwing Tournament 2020</Text>
+      <Text style={styles.titleText}>
+        Association of Tennis Professionals 2021{" "}
+      </Text>
       <Card style={styles.card}>
         <CardItem>
           <Body>
@@ -47,9 +50,9 @@ function HomeHomeScreen() {
           <Image
             source={{
               uri:
-                "https://www.containerstore.com/catalogimages/339352/10074096-small-seagrass-belly-basket.jpg",
+                "https://static1.squarespace.com/static/560195f3e4b0fcc5265b7b78/562b0f76e4b0b7066cf45af6/5c70532024a694a5a1574f64/1560235322136/hn1w1tvms4y11.jpg?format=1500w",
             }}
-            style={{ height: 200, width: null, flex: 1 }}
+            style={{ height: 200, width: null, flex: 10 }}
           />
         </CardItem>
       </Card>
