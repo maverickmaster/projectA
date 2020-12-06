@@ -17,11 +17,11 @@ export default function App() {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
-            if (route.name === "Home") {
+            if (route.name === "ATP Home") {
               iconName = "ios-home";
-            } else if (route.name === "Events") {
+            } else if (route.name === "Grand Slam Events") {
               iconName = focused ? "ios-list-box" : "ios-list";
-            } else if (route.name === "Players") {
+            } else if (route.name === "Top 5 Players") {
               iconName = Platform.OS === "ios" ? "ios-people" : "md-people";
             }
 
@@ -34,9 +34,9 @@ export default function App() {
           inactiveTintColor: "gray",
         }}
       >
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Events" component={EventsScreen} />
-        <Tab.Screen name="Players" component={PlayersScreen} />
+        <Tab.Screen name="ATP Home" component={HomeScreen} />
+        <Tab.Screen name="Grand Slam Events" component={EventsScreen} />
+        <Tab.Screen name="Top 5 Players" component={PlayersScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );

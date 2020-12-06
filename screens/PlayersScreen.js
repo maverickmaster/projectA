@@ -55,6 +55,19 @@ export default function ContactScreen() {
   return (
     <Container>
       <Content>
+        <Text
+          style={{
+            fontStyle: "italic",
+            padding: 15,
+            paddingLeft: 10,
+            paddingRight: 10,
+            fontSize: 28,
+            textAlign: "center",
+            color: "red",
+          }}
+        >
+          2021 World Top 5 Ranked Players
+        </Text>
         <List>
           {contactsData.map((item) => {
             return (
