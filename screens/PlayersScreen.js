@@ -71,7 +71,7 @@ export default function ContactScreen() {
         <List>
           {contactsData.map((item) => {
             return (
-              <ListItem avatar>
+              <ListItem avatar key={item.name}>
                 <Left>
                   <Thumbnail source={{ uri: item.pic }} />
                 </Left>
